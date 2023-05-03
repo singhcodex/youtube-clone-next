@@ -6,6 +6,7 @@ import prisma from "@/lib/prisma"
 import Link from "next/link"
 import timeago from "@/lib/timeago"
 import Video from "../components/Video"
+import Heading from "../components/Heading"
 
 /** @param {import('next').InferGetServerSidePropsType<typeof getServerSideProps> } props */
 export default function SingleVideo({ video, videos }) {
@@ -14,13 +15,7 @@ export default function SingleVideo({ video, videos }) {
 
     return (
         <>
-            <header className='h-14 flex pt-5 px-5 pb-2'>
-                <Link href={`/`} className='underline'>
-                    Home
-                </Link>
-
-                <div className='grow'></div>
-            </header>
+            <Heading />
             <div className="h-screen flex">
                 <div className="flex w-full md:w-2/3 flex-col mb-4 border-t border-r border-b border-3 border-black pl-0 bg-black">
                     <div className="relative pt-[60%]">
