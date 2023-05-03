@@ -24,7 +24,7 @@ export default function Heading(){
             <div className="grow ml-10 -mt-1"></div>
             {session && (
                 <Link href={`/channel/${session.user.username}`} className="flex">
-                <img src="{session.user.image}" className="h-8 mr-2 mb-2 -mt-1 w-8 rounded-full" alt="user avatar"/>
+                <img src={session.user.image} className="h-8 mr-2 mb-2 -mt-1 w-8 rounded-full" alt="user avatar"/>
                 <p className="mr-3">{session.user.name}</p>
                 </Link>
             )}
